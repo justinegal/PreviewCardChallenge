@@ -1,0 +1,162 @@
+/* Font Styles */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/* Main Style */
+body {
+    background-color: hsl(0, 0%, 95%);
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.content-one, .content-two, .content-three{
+    padding-top: 2.5em;
+    flex: 1;
+}
+.content-one{
+    background-color: hsl(31, 77%, 52%);
+}
+.content-one button{
+    color:hsl(31, 77%, 52%);
+}
+.content-one button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: solid;
+    border-color: hsl(0, 0%, 95%);
+}
+.content-two{
+    background-color:hsl(184, 100%, 22%);
+}
+.content-two button{
+    color:hsl(184, 100%, 22%);
+}
+.content-two button:hover {
+    background-color:hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: solid;
+    border-color: hsl(0, 0%, 95%);
+}
+.content-three{
+    background-color: hsl(179, 100%, 13%);
+}
+.content-three button{
+    color:hsl(179, 100%, 13%);
+}
+.content-three button:hover {
+    background-color:hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: solid;
+    border-color: hsl(0, 0%, 95%);
+}
+h1{
+    text-transform: uppercase;
+    font-family:"big shoulders display";
+    font-weight: 700;
+    font-size: 2em;
+    color: hsl(0, 0%, 95%);
+}
+p{
+    font-size: .9375em;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "lexend deca";
+    font-weight: 400;
+}
+button{
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    width: 9em;
+    height: 3em;
+    border-radius: 10em;
+    font-family: "lexend deca";
+    font-weight: 400;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color:transparent;
+    animation: effect 8s linear infinite;
+    \ 
+}
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(
+            hsl(31, 77%, 52%), hsl(179, 100%, 13%));
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(
+            hsl(184, 100%, 22%), hsl(31, 77%, 32%));
+        -webkit-background-clip: text;
+    }
+}
+
+
+/* Responsive Changes */
+@media (min-width: 1200px) {
+body, html {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+}
+body {
+    height: 100vh;
+}
+.container {
+    width: 58%;
+    height: 26em;
+}
+.content-one, .content-two, .content-three{
+  padding-left: 2.1em;
+  padding-right: 2.1em;
+  height: 100%; 
+  display: inline-block;
+}
+.content-one{
+    border-radius: .5em 0 0 .5em;
+}
+.content-three{
+    border-radius: 0 .5em .5em 0 ;
+}
+p{
+    margin-bottom: 4.75em;
+    line-height: 1.5rem;
+}
+}
+@media (max-width: 1200px) {
+body{
+    height: 100%;
+}
+.container {
+    flex-direction: column;
+    width: 85%;
+    height: auto;
+}
+.content-one, .content-two, .content-three{
+    padding-left: 2.2em;
+    padding-right: 2.2em;
+    height: 100vh;
+    display: block
+  }
+.content-one{
+    border-radius: .5em .5em 0 0;
+}
+.content-three{
+    border-radius: 0 0 .5em .5em ;
+}
+p{
+    line-height: 1.5rem;
+    margin: 0 0 1.8em 0;
+}
+button{
+    margin: 0 1em 2.5em 0;
+}
+}
