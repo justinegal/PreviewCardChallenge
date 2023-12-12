@@ -82,7 +82,6 @@ button{
 .attribution a { 
     color:transparent;
     animation: effect 8s linear infinite;
-    \ 
 }
 
 @keyframes effect {
